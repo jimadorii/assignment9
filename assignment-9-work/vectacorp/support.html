@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+	
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+            
+            $( function() {
+                $("#display").tooltip();
+            });
+            
+		});
+        
+	</script>
+	
+	<style>
+        .home.entry {
+            margin-top: -10em;
+        }
+    </style>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li id="home" title="Return to Vecta Corp's home page"><a href="index.html">Home</a></li>
+				<li id="about" title="Learn more about Vecta Corp"><a href="aboutus.html">About Us</a></li>
+				<li id="solutions" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers"><a href="solutions.html">Solutions</a></li>
+				<li id="support" title="Find support for our range of products"><a href="support.html">Support</a></li>
+				<li id="contact" title="Contact us directly"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="sixteen columns">
+			<h4>Support</h4>
+			<p>Find the latest technical resources including articles, tips, patches, documentation and more and discuss ideas with your peers. These communities are your convenient one-stop shop for vSupport. Still have a question? <a href="mailto:support@vectacorp.com?Subject=I%20need%20help...">Send us an email</a>.</p>
+		</section>
+	</main>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('#responsive-menu').mobileMenu();
+            
+            // tooltip
+            $( function() {
+                $("#display").tooltip();
+            });
+            
+            // tabs + styles
+            $( function() {
+                $("#tabs").tabs();
+            });
+            $("#tabs ul").css({
+                "display": "inline-block",
+                "background-color": "gray",
+                "padding-top": ".75em",
+                "width": "18.75em",
+                "height": "3em"
+            });
+            
+            $("#tabs ul li").css({
+                "display": "inline-block",
+                "background-color": "lightgray",
+                "padding": ".75em .25em 1.25em .5em",
+                "margin-left": ".9em",  
+            });
+            
+            $('#tabs a').css({
+                "text-decoration": "none",
+            });
+            
+            // tabs description area
+            $('#tabs-1').css({
+                "background-color": "lightgray",
+                "margin-top": "-1.1em",
+                "padding": "2.5em 1em 2em 1em",
+                "text-align": "center",
+                "max-height": "8em"
+            });
+            $('#tabs-1 img').css({
+                "margin": "-1em 0 1em 0"
+            });
+            
+            $('#tabs-2').css({
+                "background-color": "lightgray",
+                "margin-top": "-1.1em",
+                "padding": "2.5em 1em 2em 1em",
+                "text-align": "center",
+                "max-height": "8em"
+            });
+            $('#tabs-2 img').css({
+                "margin": "-1em 0 1em 0"
+            });
+            
+            $('#tabs-3').css({
+                "background-color": "lightgray",
+                "margin-top": "-1.1em",
+                "padding": "2.5em 1em 2em 1em",
+                "text-align": "center",
+                "max-height": "8em"
+            });
+            $('#tabs-3 img').css({
+                "margin": "-1em 0 1em 0"
+            });
+            
+            // accordion
+            $( function() {
+                $( "#accordion" ).accordion();
+            });
+            $("#accordion div").css({
+                "max-height": "22em",
+                "background-color": "lightgray"
+            });
+            $("#accordion h3").css({
+                "display": "inline-block",
+                "background-color": "gray",
+                "padding": ".25em 0 .25em .5em",
+                "width": "9.5em",
+                "height": "1.25em",
+                "color": "white"
+            });
+            $("#accordion div").css({
+                "background-color": "lightgray",
+                "margin-top": "-1.55em",
+                "padding": "2.5em 1em 3em 1em",
+            });
+            $("#accordion div p").css({
+                "background-color": "lightgray",
+                "margin": "-2em 0 0 .25em",
+                "padding": "0em 1em 3em 1em",
+            });
+            
+		});
+	</script>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li id="home" title="Return to Vecta Corp's home page"><a href="index.html">Home</a></li>
+				<li id="about" title="Learn more about Vecta Corp"><a href="aboutus.html">About Us</a></li>
+				<li id="solutions" title="Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers"><a href="solutions.html">Solutions</a></li>
+				<li id="support" title="Find support for our range of products"><a href="support.html">Support</a></li>
+				<li id="contact" title="Contact us directly"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="five columns">
+			<h4>Welcome</h4>
+
+			<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+		</section>
+		
+		<section id="solutions" class="six columns">
+			<h4>Our Solutions</h4> 
+			
+			<!-- INSERT TABS HERE -->
+			
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">vProspect</a></li>
+            <li><a href="#tabs-2">vConvert</a></li>
+            <li><a href="#tabs-3">vRetain</a></li>
+          </ul>
+          <div id="tabs-1">
+            <img src="images/logo_vprospect.gif"> <p>Define and research your target audience, define your strategy to reach that audience and present a strong and memorable brand to that audience.</p>
+          </div>
+          <div id="tabs-2">
+            <img src="images/logo_vconvert.gif"> <p>Create a highly user-friendly and easy-to-navigate information architecture that will help your prospects interact with the company on a highly interactive level.</p>
+          </div>
+          <div id="tabs-3">
+            <img src="images/logo_vretain.gif"> <p>Build on existing customer relationships to improve productivity and maximize customer loyalty, while growing revenues.</p>
+          </div>
+        </div>
+        
+			
+	<!--		<ul class='tabs'>
+  <li><a href='#tab1'>Tab 1</a></li>
+  <li><a href='#tab2'>Tab 2</a></li>
+  <li><a href='#tab3'>Tab 3</a></li>
+</ul>
+<div id='tab1'>
+  <p>Hi, this is the first tab.</p>
+</div>
+<div id='tab2'>
+  <p>This is the 2nd tab.</p>
+</div>
+<div id='tab3'>
+  <p>And this is the 3rd tab.</p>
+</div>   -->
+		</section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Client Testimonials</h4>
+
+			<!-- INSERT ACCORDION HERE -->
+			<div id="accordion">
+  <h3>Iona Ford</h3>
+  <div>
+    <blockquote>"Throughout the years we have worked with Vecta Corporation, we have always been amazed at the level of dedication and professionalism that they have provided us and our WGDC products. It is this commitment that has increased both our income and exposure exponentially."</blockquote>
+        <br />
+        <br />
+
+        <p>Iona Ford<br />
+        President<br />
+        Chevy Dealers Association</p>
+  </div>
+  
+  <h3>Robin Banks</h3>
+  <div>
+    <blockquote>"Incredible results from an incredible effort by the Vecta Corporation team! We are very pleased with the business benefits we have rceived by working with them."</blockquote>
+        <br />
+        <br />
+        
+        <p>Robin Banks<br />
+        CEO<br />
+        Profits Financial, Inc.</p>
+  </div>
+</div>
+		</section>
+	</main>
+</body>
+</html>

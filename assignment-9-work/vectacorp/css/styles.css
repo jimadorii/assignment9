@@ -1,0 +1,92 @@
+.ui-tabs.ui-tabs-vertical {
+    padding: 0;
+    width: 52.25em;
+    float: left;
+    height: 16em;
+    margin-bottom: 1.5em;
+}
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+    border: none;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+    float: left;
+    width: 18em;
+    height: 16.4em;
+    margin-top: .25em;
+    background: #CCC;
+    border-radius: 4px 0 0 4px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    margin-bottom: .2em;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    position: relative;
+    right: -2px;
+    z-index: 2;
+    height: 3.13em;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    width: 50%;
+    padding: 0.6em 1em;
+    text-decoration: none;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+    cursor: pointer;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+    background-color: gray;
+    font-weight: bold;
+
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+    margin-bottom: 0px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+    float: left;
+    width: 31.25em;
+    height: 13.4em;
+    border-radius: 0;
+    position: relative;
+    left: -1px;
+    margin: .25em 0 0 0;
+    padding: 1.5em;
+    background: gray;
+    color: white;
+    text-align: justify;
+}
+
+
+
+.pics {  
+    height:  232px;  
+    width:   232px;  
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.pics img {  
+    padding: 15px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;  
+    width:  200px; 
+    height: 200px; 
+    top:  0; 
+    left: 0 
+} 
+
+.cycle-slideshow img {
+    background-color: lightgray;
+    padding: 1.5em 8em 1.5em 8em;
+    border-radius: .5em;
+}
+
+.ui-checkbox {
+    font-size: 0.75em;
+    margin: 0.6em;
+}
+
